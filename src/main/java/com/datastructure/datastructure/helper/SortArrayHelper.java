@@ -23,4 +23,16 @@ public class SortArrayHelper {
         nums[index1] = nums[index2];
         nums[index2] = temp;
     }
+
+    public static int findSmallestIndex(int[] nums, int startIndex) {
+        int smallest = startIndex;
+
+        for (int i = startIndex; i < nums.length; i++) {
+            if (nums[i] < nums[smallest]) {
+                smallest = i;
+            }
+        }
+
+        return smallest;
+    }
 }
