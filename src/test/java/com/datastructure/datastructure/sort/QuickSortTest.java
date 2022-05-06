@@ -5,11 +5,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-public class SelectionSortTest {
+public class QuickSortTest {
 
     @Test
     public void sort() {
-        int[] result = SelectionSort.sort(SortArrayHelper.getUnsortedNumbers());
+        int[] result = QuickSort.sort(SortArrayHelper.getUnsortedNumbers());
         assertArrayEquals(SortArrayHelper.getSortedNumbers(), result);
     }
 }

@@ -7,8 +7,8 @@ import java.util.Arrays;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class SortArrayHelper {
-    private static final int[] UNSORTED_NUMBERS = {7, 6, 4, 3, 0, 9, 1, 8, 2, 5};
-    private static final int[] SORTED_NUMBERS = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    private static final int[] UNSORTED_NUMBERS = {7, 6, 4, 2, 3, 0, 9, 9, 1, 8, 2, 5};
+    private static final int[] SORTED_NUMBERS = {0, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 9};
 
     public static int[] getSortedNumbers() {
         return Arrays.copyOf(SORTED_NUMBERS, SORTED_NUMBERS.length);

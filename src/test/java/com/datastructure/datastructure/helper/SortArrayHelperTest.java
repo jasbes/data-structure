@@ -12,6 +12,6 @@ public class SortArrayHelperTest {
     @Test
     public void findSmallestIndex() {
         int result = SortArrayHelper.findSmallestIndex(SortArrayHelper.getUnsortedNumbers(), 0);
-        assertEquals(4, result);
+        assertEquals(5, result);
     }
 }
